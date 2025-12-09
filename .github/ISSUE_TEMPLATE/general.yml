@@ -1,20 +1,36 @@
----
-name: Issue Template
-about: 프로젝트 이슈 템플릿입니다.
-title: "[작업 태그] 이슈 제목"
-labels: ''
-assignees: ''
----
-
-## 📝 작업 페이지 캡쳐
-|    페이지    |   캡쳐   |
-| :-------------: | :----------: |
-| 피그마 | <img src = "" width ="250"> |
-
-
-
-## 작업할 브랜치
-- `` 브랜치에서 작업합니다.
-
-## ✔️ To-Do
-- [ ] 세부적으로 적어주세요
+name: 📝 일반 작업 요청 (General Task)
+description: 일반적인 작업 요청, 리팩토링, 디자인 관련 이슈 등을 생성합니다.
+title: "[Task] 이슈 제목을 명확히 작성해 주세요"
+labels: ["feat"]
+assignees: [] # 💡 수정: 빈 배열로 지정
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📌 작업 상세 내용
+  - type: textarea
+    id: capture
+    attributes:
+      label: 🖼️ 작업 페이지 캡쳐
+      description: 피그마 또는 디자인 레퍼런스 이미지를 첨부하거나 설명을 적어주세요.
+      placeholder: 이미지 URL 또는 설명을 입력하세요.
+    validations:
+      required: false
+  - type: input
+    id: branch
+    attributes:
+      label: 🌲 작업할 브랜치
+      description: 이 작업을 진행할 브랜치 이름을 적어주세요.
+      placeholder: develop-feature/이슈번호
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: ✔️ To-Do (세부 작업 목록)
+      description: 이 이슈를 해결하기 위한 세부 작업 목록을 적어주세요.
+      placeholder: |
+        - [ ] 작업 1
+        - [ ] 작업 2
+    validations:
+      required: true
