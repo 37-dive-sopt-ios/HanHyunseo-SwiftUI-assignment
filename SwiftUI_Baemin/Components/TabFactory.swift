@@ -15,13 +15,13 @@ struct TabFactory {
         case .home:
             MainView() 
         case .shopping:
-            Text("장보기·쇼핑 화면 준비중")
+            Text("장보기·쇼핑 화면")
         case .zzim:
-            Text("찜 화면 준비중")
+            Text("찜 화면")
         case .orderList:
-            Text("주문내역 화면 준비중")
+            Text("주문내역 화면")
         case .myBaemin:
-            Text("마이배민 화면 준비중")
+            Text("마이배민 화면")
         }
     }
 }

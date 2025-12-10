@@ -9,6 +9,13 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text("메인 화면입니다") 
+        VStack(spacing: 0){
+            AddressView()
+            SearchBar()
+        }
     }
+}
+
+#Preview {
+    MainView()
 }
