@@ -1,5 +1,5 @@
 //
-//  SearchBar.swift
+//  SearchBarView.swift
 //  SwiftUI_Baemin
 //
 //  Created by Hyunseo Han on 12/10/25.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct SearchBar: View {
+struct SearchBarView: View {
     var body: some View {
         HStack {
             Text("찾아라! 맛있는 음식과 맛집")
@@ -38,5 +38,5 @@ struct SearchBar: View {
 }
 
 #Preview {
-    SearchBar()
+    SearchBarView()
 }
