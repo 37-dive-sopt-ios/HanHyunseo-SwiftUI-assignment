@@ -10,22 +10,9 @@
 		785572C42EE83E8B00146BE7 /* SwiftUI_Baemin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Baemin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		785573102EE91E3200146BE7 /* Exceptions for "SwiftUI_Baemin" folder in "SwiftUI_Baemin" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"SwiftUI-Baemin-Info.plist",
-			);
-			target = 785572C32EE83E8B00146BE7 /* SwiftUI_Baemin */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		785572C62EE83E8B00146BE7 /* SwiftUI_Baemin */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				785573102EE91E3200146BE7 /* Exceptions for "SwiftUI_Baemin" folder in "SwiftUI_Baemin" target */,
-			);
 			path = SwiftUI_Baemin;
 			sourceTree = "<group>";
 		};
