@@ -12,6 +12,8 @@ struct MainView: View {
         VStack(spacing: 0){
             AddressView()
             SearchBarView()
+            PromotionView()
+            ServiceTabView()
         }
     }
 }
