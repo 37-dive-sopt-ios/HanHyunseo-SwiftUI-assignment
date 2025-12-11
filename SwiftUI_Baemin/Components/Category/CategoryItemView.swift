@@ -23,6 +23,6 @@ struct CategoryItemView: View {
                 .foregroundStyle(.baeminBlack)
         }
         .frame(maxWidth: .infinity) // 그리드 안에서 꽉 차게
-        .background(.yellow)
+        .background(.clear)
     }
 }

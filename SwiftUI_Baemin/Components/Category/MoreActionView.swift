@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MoreActionView: View {
-    let title: String 
+    let title: String
     
     var body: some View {
         Button {
@@ -26,7 +26,7 @@ struct MoreActionView: View {
             .foregroundStyle(.baeminBlack)
             .padding(.vertical, 10)
             .frame(maxWidth: .infinity) // 가로 꽉채워서 정렬
-            .background(.red)
+            .background(.baeminWhite)
             
             .overlay(
                 Rectangle()

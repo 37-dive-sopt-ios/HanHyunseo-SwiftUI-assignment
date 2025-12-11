@@ -27,6 +27,7 @@ struct PromotionView: View{
             }
         }
         .padding(.horizontal, 16)
+        .padding(.vertical, 30)
         .frame(maxWidth: .infinity, alignment: .leading) // 화면 양쪽으로 꽉 채우기
         .background(
             LinearGradient(

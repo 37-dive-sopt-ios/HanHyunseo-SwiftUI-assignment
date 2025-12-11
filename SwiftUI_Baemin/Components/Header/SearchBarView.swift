@@ -31,8 +31,6 @@ struct SearchBarView: View {
             RoundedRectangle(cornerRadius: 50)
                 .stroke(Color.baeminBlack, lineWidth: 1)
         )
-        // .frame(height: 40)
-        .padding(.vertical, 10)
         .padding(.horizontal, 20) // 좌우 여백
     }
 }

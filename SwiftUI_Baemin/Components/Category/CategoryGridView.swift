@@ -21,6 +21,6 @@ struct CategoryGridView: View {
         }
         .padding(.vertical, 20)
         .padding(.horizontal, 16)
-        .background(.cyan)
+        .background(.baeminWhite)
     }
 }
