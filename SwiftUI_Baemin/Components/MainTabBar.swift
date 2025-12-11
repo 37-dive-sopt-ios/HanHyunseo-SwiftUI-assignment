@@ -21,7 +21,7 @@ struct MainTabView: View {
                     .tag(tab)
             }
         }
-        .tint(.primary)
+        .tint(.baeminBlack)
     }
 }
 

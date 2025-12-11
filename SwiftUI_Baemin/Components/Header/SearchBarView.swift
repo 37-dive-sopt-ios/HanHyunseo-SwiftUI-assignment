@@ -21,15 +21,15 @@ struct SearchBarView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 24, height: 24)
+                .foregroundStyle(.baeminGray600)
         }
         .padding(.vertical, 8) // 상하 여백
         .padding(.horizontal, 17) // 좌우 여백
         .background(.baeminWhite)
-        .shadow(color: .black.opacity(0.05), radius: 2, x: 0, y: 1) // 살짝 그림자
-        // 테두리 추가
+        .clipShape(RoundedRectangle(cornerRadius: 50))
         .overlay(
             RoundedRectangle(cornerRadius: 50)
-                .stroke(Color.baeminGray300, lineWidth: 1)
+                .stroke(Color.baeminBlack, lineWidth: 1)
         )
         // .frame(height: 40)
         .padding(.vertical, 10)

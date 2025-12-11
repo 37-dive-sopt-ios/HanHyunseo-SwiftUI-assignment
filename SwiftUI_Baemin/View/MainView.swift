@@ -15,6 +15,7 @@ struct MainView: View {
             PromotionView()
             ServiceTabView()
         }
+        .background(.baeminBackgroundWhite)
     }
 }
 

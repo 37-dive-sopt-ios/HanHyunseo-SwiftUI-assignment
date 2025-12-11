@@ -56,7 +56,7 @@ struct ServiceTabView: View {
                 .padding(.horizontal, 16)
             }
             .padding(.top, 10)
-            .background(.red)
+            .background(.baeminWhite)
             .clipShape(
                 .rect(
                     topLeadingRadius: 10,
@@ -64,14 +64,22 @@ struct ServiceTabView: View {
                 )
             )
             
+            Rectangle()
+                .fill(.baeminGray200)
+                .frame(height: 1)
+                        
             TabView(selection: $selectedTab) {
                 ForEach(ServiceType.allCases, id: \.self) { type in
-                    CategoryGridView(items: getItems(for: type))
-                        .tag(type)
+                    VStack(spacing: 0) {
+                        CategoryGridView(items: getItems(for: type))
+                        MoreActionView(title: type.rawValue)
+                        Spacer()
+                    }
+                    .tag(type)
                 }
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
-            .frame(height: 200)
+            .frame(height: 270)
         }
     }
 }

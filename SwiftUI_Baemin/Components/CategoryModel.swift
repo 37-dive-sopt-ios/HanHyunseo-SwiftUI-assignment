@@ -28,7 +28,6 @@ extension CategoryModel {
     ]
 }
 
-// 탭 종류를 정의하는 열거형
 enum ServiceType: String, CaseIterable {
     case delivery = "음식배달"
     case pickup = "픽업"
