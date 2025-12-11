@@ -14,6 +14,7 @@ struct MainView: View {
             SearchBarView()
             PromotionView()
             ServiceTabView()
+            BannerView()
         }
         .background(.baeminBackgroundWhite)
     }
