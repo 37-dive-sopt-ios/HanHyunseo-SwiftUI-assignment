@@ -27,14 +27,14 @@ struct MainView: View {
                             .padding(.bottom, 80)
                     }
                 } header: {
-                    // 여기가 스티키 헤더
+                    // 스티키 헤더
                     SearchBarView()
                         .padding(.bottom, 10)
                 }
             }
         }
         .background(.baeminBackgroundWhite)
-        .ignoresSafeArea(edges: .bottom) // 하단 탭바 영역까지 자연스럽게
+        .ignoresSafeArea(edges: .bottom)
     }
 }
 
