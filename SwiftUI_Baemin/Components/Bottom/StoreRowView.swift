@@ -17,20 +17,21 @@ struct StoreRowView: View {
                     VStack(spacing: 8){
                         Image(store.imageName)
                             .resizable()
-                            .scaledToFit()
+                            .scaledToFill()
                             .frame(width: 54, height: 54)
+                            .clipShape(RoundedRectangle(cornerRadius: 6))
                         
                         Text(store.name)
                             .font(.pretendard(.body_r_14))
                             .foregroundStyle(.baeminBlack)
                     }
                 }
-                .background(.yellow)
+                .background(.baeminWhite)
             }
             .padding(.horizontal, 16)
-            .background(.red)
+            .background(.baeminWhite)
         }
-        .frame(height: 80)
+        .frame(height: 100)
     }
 }
 

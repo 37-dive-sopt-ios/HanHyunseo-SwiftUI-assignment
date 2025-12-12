@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-// 상단 탭을 누르면 내용 바뀌어야 함
-// 스와이프 가능하도록
 
 struct ServiceTabView: View {
     @State private var selectedTab: ServiceType = .delivery

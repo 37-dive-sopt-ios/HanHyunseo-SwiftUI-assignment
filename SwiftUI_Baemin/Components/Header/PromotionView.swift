@@ -31,7 +31,7 @@ struct PromotionView: View{
         .frame(maxWidth: .infinity, alignment: .leading) // 화면 양쪽으로 꽉 채우기
         .background(
             LinearGradient(
-                colors: [.baeminBackgroundWhite, .baeminMint300],
+                colors: [.clear, .baeminMint300],
                 startPoint: .top,
                 endPoint: .bottom
             )

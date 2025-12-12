@@ -13,15 +13,15 @@ struct TabFactory {
     static func createView(for tab: Tab) -> some View {
         switch tab {
         case .home:
-            MainView() 
+            MainView()
         case .shopping:
-            Text("장보기·쇼핑 화면")
-        case .zzim:
-            Text("찜 화면")
+            Text("장보기·쇼핑")
+        case .heart:
+            Text("찜")
         case .orderList:
-            Text("주문내역 화면")
+            Text("주문내역")
         case .myBaemin:
-            Text("마이배민 화면")
+            Text("마이배민")
         }
     }
 }

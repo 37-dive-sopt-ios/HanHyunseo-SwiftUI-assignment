@@ -10,13 +10,21 @@ import SwiftUI
 struct MainTabView: View {
     @State private var selectedTab: Tab = .home
     
+    
+    init() {
+        UITabBar.appearance().unselectedItemTintColor = .baeminGray600
+    }
+    
     var body: some View {
         TabView(selection: $selectedTab) {
             ForEach(Tab.allCases) { tab in
                 
                 TabFactory.createView(for: tab)
                     .tabItem {
-                        Label(tab.rawValue, systemImage: tab.systemImage)
+                        Image(tab.tabImage)
+                            .renderingMode(.template)
+                        
+                        Text(tab.rawValue)
                     }
                     .tag(tab)
             }

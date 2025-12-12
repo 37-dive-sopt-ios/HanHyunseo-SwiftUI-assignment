@@ -10,19 +10,19 @@ import SwiftUI
 enum Tab: String, CaseIterable, Identifiable {
     case home = "홈"
     case shopping = "장보기·쇼핑"
-    case zzim = "찜"
+    case heart = "찜"
     case orderList = "주문내역"
     case myBaemin = "마이배민"
     
-    var id: String { self.rawValue }
+    var id: Self { self }
     
-    var systemImage: String {
+    var tabImage: String {
         switch self {
-        case .home: return "house"
-        case .shopping: return "bag"
-        case .zzim: return "heart"
-        case .orderList: return "doc.text"
-        case .myBaemin: return "person"
+        case .home: return "tab_home"
+        case .shopping: return "tab_shopping"
+        case .heart: return "tab_heart"
+        case .orderList: return "tab_order"
+        case .myBaemin: return "tab_face"
         }
     }
 }

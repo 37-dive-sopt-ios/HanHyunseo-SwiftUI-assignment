@@ -18,16 +18,18 @@ struct MainView: View {
                         PromotionView()
                         ServiceTabView()
                             .offset(y: -10)
+                            .padding(.bottom, -20)
                         StoreRowView()
+                            .padding(.bottom, 10)
                         BannerView()
-                        
-                        Spacer().frame(height: 20)
+                            .padding(.bottom, 10)
+                        RankingView()
+                            .padding(.bottom, 80)
                     }
                 } header: {
                     // 여기가 스티키 헤더
                     SearchBarView()
                         .padding(.bottom, 10)
-                        .background(.baeminBackgroundWhite)
                 }
             }
         }
